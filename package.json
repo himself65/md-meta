@@ -5,6 +5,9 @@
   "repository": "https://github.com/Himself65/md-meta.git",
   "author": "himself65 <himself6565@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest -i"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.13",
     "@types/node": "^10.12.21",
