@@ -20,5 +20,6 @@ jobs:
         - yarn global add codecov
       script:
         - yarn run test
+        - yarn run test:coverage
       after_success:
         - codecov

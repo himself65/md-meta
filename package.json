@@ -7,11 +7,15 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "jest -i"
+    "test": "node build/run-tests.js",
+    "test:unix": "cross-env NODE_ENV=test jest",
+    "test:win32": "cross-env NODE_ENV=test jest -i",
+    "test:coverage": "yarn test --coverage"
   },
   "devDependencies": {
     "@types/jest": "^23.3.13",
     "@types/node": "^10.12.21",
+    "cross-env": "^5.2.0",
     "eslint": "^5.12.1",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
