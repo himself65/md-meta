@@ -19,6 +19,7 @@ jobs:
       before_script:
         - yarn global add codecov
       script:
+        - yarn run lint
         - yarn run test
         - yarn run test:coverage
       after_success:
