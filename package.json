@@ -8,10 +8,8 @@
   "types": "index.d.ts",
   "scripts": {
     "lint": "eslint ./**/*.js",
-    "test": "node build/run-tests.js",
-    "test:unix": "cross-env NODE_ENV=test jest",
-    "test:win32": "cross-env NODE_ENV=test jest -i",
-    "test:coverage": "yarn test --coverage"
+    "test": "jest -i",
+    "test:coverage": "jest -i --coverage"
   },
   "devDependencies": {
     "@types/jest": "^23.3.13",
